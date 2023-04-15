@@ -110,7 +110,7 @@ void Expression::convert()
             if (i < infix_Expression.size() && infix_Expression[i] == '.')
             {
                 i++;
-                int dec = 10;
+                double dec = 10;
                 while (i < infix_Expression.size() && isdigit(infix_Expression[i]))
                 {
                     num += ((infix_Expression[i] - '0') / dec);
